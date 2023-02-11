@@ -3,7 +3,7 @@
 
 #include <dlfcn.h>
 
-__attribute__ ((constructor))
+__attribute__((constructor))
 void initialize_library() {
     printf("[+] library is loaded\n");
 }
