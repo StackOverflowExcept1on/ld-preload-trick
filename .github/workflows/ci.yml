@@ -14,3 +14,6 @@ jobs:
 
       - name: Build project
         run: ./build.sh
+
+      - name: Run project
+        run: LD_PRELOAD=./build/bin/libhook.so ./build/bin/demo
