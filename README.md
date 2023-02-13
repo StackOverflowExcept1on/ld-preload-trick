@@ -1,5 +1,7 @@
 ### ld-preload-trick
 
+[![Build Status](https://github.com/StackOverflowExcept1on/ld-preload-trick/actions/workflows/ci.yml/badge.svg)](https://github.com/StackOverflowExcept1on/ld-preload-trick/actions/workflows/ci.yml)
+
 C++ library that is loaded before the binary and hooks the `time` function
 
 ### Requirements
