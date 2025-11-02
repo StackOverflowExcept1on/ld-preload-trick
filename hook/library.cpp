@@ -3,7 +3,7 @@
 
 #include <dlfcn.h>
 
-__attribute__((constructor))
+[[gnu::constructor]]
 void initialize_library() {
     printf("[+] library is loaded\n");
 }
@@ -27,7 +27,7 @@ extern "C" time_t time(time_t *arg1) {
     return 0;
 }
 
-__attribute__((destructor))
+[[gnu::destructor]]
 void destroy_library() {
     printf("[-] library has been unloaded\n");
 }
